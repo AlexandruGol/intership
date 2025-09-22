@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="E:\intership\styles\profile.css">
+<link rel="icon" href="E:\intership\assets\profile\Food del.png">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="left">
+      <div class="logo">
+        <img src="E:\intership\assets\profile\Food del.png" alt="Logo">
+      </div>
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="#">Restaurants</a>
+      <a href="#">Deals</a>
+      <a href="#">My orders</a>
+      <div class="notifications">
+        <i class="fa fa-envelope"></i>
+        <span class="badge">4</span>
+      </div>
+      <div class="profile">
+        <img src="E:\intership\assets\profile\profile.png" alt="Profile">
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="settings-wrapper">
+    <div class="settings-container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Settings</h2>
+        <ul>
+          <li class="active">
+            <i class="fa fa-user"></i>
+            <div>
+              <span class="subtitle">Personal information</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-map-marker-alt"></i>
+            <div>
+              <span class="title">Address</span><br>
+              <span class="subtitle">Shippings addresses</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-credit-card"></i>
+            <div>
+              <span class="title">Payment method</span><br>
+              <span class="subtitle">Connected credit cards</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-lock"></i>
+            <div>
+              <span class="title">Security</span><br>
+              <span class="subtitle">Password, 2FA</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+    <!-- CONTENT -->
+<section class="content">
+  <div class="content-header">
+    <h2>Account</h2>
+  </div>
+  <h3>Personal information</h3>
+
+        <div class="profile-section">
+          <img src="E:\intership\assets\profile\avatar.png" alt="Avatar" class="avatar">
+          <button class="btn blue">Change</button>
+          <button class="btn">Remove</button>
+        </div>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="Firstname">First name</label>
+              <input type="text" value="Jane" name="Firstname">
+            </div>
+            <div class="form-group">
+              <label for="Lastname">Last name</label>
+              <input type="text" value="Robertson" name="Lastname">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" value="jane.robertson@example.com" name="Email">
+            </div>
+            <div class="form-group">
+              <label for="Phonenumber">Phone number</label>
+              <input type="tel" value="(217) 555-0113" name="Phonenumber">
+            </div>
+          </div>
+
+          <h3>Email notifications</h3>
+          <div class="checkboxes">
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> New deals</label>
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> New restaurants</label>
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> Order statuses</label>
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> Password changes</label>
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> Special offers</label>
+            <label for="checkbox"><input type="checkbox" checked name="checkbox"> Newsletter</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn red">Log out</button>
+            <div class="right">
+              <button type="reset" class="btn">Discard changes</button>
+              <button type="submit" class="btn blue">Save changes</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
