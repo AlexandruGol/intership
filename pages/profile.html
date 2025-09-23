@@ -84,47 +84,73 @@
           <button class="btn">Remove</button>
         </div>
 
-        <form>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="Firstname">First name</label>
-              <input type="text" id="Firstname" value="Jane" name="Firstname">
-            </div>
-            <div class="form-group">
-              <label for="Lastname">Last name</label>
-              <input type="text" id="Lastname" value="Robertson" name="Lastname">
-            </div>
-          </div>
+  <form action="profile.html" method="POST">
+    <div class="form-row">
+      <div class="form-group">
+      <label for="Firstname">First name</label>
+      <input 
+        type="text" 
+        id="Firstname" 
+        name="Firstname" 
+        value="Jane" 
+        required 
+        minlength="2"
+      >
+      </div>
+      <div class="form-group">
+      <label for="Lastname">Last name</label>
+      <input 
+        type="text" 
+        id="Lastname" 
+        name="Lastname" 
+        value="Robertson" 
+        required 
+        minlength="2"
+        >
+      </div>
+  </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="Email">Email</label>
-              <input type="email" id="email" value="jane.robertson@example.com" name="Email">
-            </div>
-            <div class="form-group">
-              <label for="Phonenumber">Phone number</label>
-              <input type="tel" id="Phonenumber" value="(217) 555-0113" name="Phonenumber">
-            </div>
-          </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="Email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="Email" 
+        value="jane.robertson@example.com" 
+        required 
+        >
+    </div>
+    <div class="form-group">
+      <label for="Phonenumber">Phone number</label>
+      <input 
+        type="tel" 
+        id="Phonenumber" 
+        name="Phonenumber" 
+        value="(217) 555-0113" 
+        required 
+        pattern="[0-9+\-\s()]{7,15}" 
+        >
+    </div>
+  </div>
 
-          <h3>Email notifications</h3>
-          <div class="checkboxes">
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> New deals</label>
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> New restaurants</label>
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> Order statuses</label>
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> Password changes</label>
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> Special offers</label>
-            <label for="checkbox"><input type="checkbox" id="checkbox" checked name="checkbox"> Newsletter</label>
-          </div>
-
-          <div class="form-actions">
-            <button type="button" class="btn red">Log out</button>
-            <div class="right">
-              <button type="reset" class="btn">Discard changes</button>
-              <button type="submit" class="btn blue">Save changes</button>
-            </div>
-          </div>
-        </form>
+  <h3>Email notifications</h3>
+  <div class="checkboxes">
+    <label><input type="checkbox" id="checkbox1" checked name="checkbox"> New deals</label>
+    <label><input type="checkbox" id="checkbox2" checked name="checkbox"> New restaurants</label>
+    <label><input type="checkbox" id="checkbox3" checked name="checkbox"> Order statuses</label>
+    <label><input type="checkbox" id="checkbox4" checked name="checkbox"> Password changes</label>
+    <label><input type="checkbox" id="checkbox5" checked name="checkbox"> Special offers</label>
+    <label><input type="checkbox" id="checkbox6" checked name="checkbox"> Newsletter</label>
+  </div>
+    <div class="form-actions">
+      <button type="button" class="btn red">Log out</button>
+      <div class="right">
+      <button type="reset" class="btn">Discard changes</button>
+      <button type="submit" class="btn blue">Save changes</button>
+    </div>
+  </div>
+</form>
       </section>
     </div>
   </main>
