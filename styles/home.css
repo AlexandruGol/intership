@@ -206,7 +206,7 @@ body {
   border-radius: 6px;
 }
 
-/* Extra images (cum aveai tu) */
+
 .extra-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -240,5 +240,90 @@ body {
   }
   .card img {
     height: 200px;
+  }
+}
+
+/* telefoane ca in login.css (≤600px) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 12px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 20;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  }
+
+
+  .nav-links a { 
+    display: none; 
+  }
+
+  .logo img { 
+    height: 28px; 
+  }
+  .nav-links { 
+    gap: 12px; 
+  }
+
+
+  .banners { 
+    padding: 12px; 
+    gap: 12px; 
+  }
+  .banner { 
+    border-radius: 16px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06); 
+  }
+  .banner img { 
+    border-radius: 16px; 
+  }
+  .banner-text h3 { 
+    font-size: 20px; 
+  }
+
+
+  .categories {
+    margin: 8px 12px 0;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .category {
+    min-width: calc(25% - 8px);
+    height: 74px;
+    border-radius: 14px;
+  }
+  .category p { 
+    font-size: 12px; 
+  }
+
+
+  .restaurants { 
+    padding: 12px; 
+  }
+  .restaurants h2 { 
+    margin-bottom: 10px; 
+    text-align: left; 
+    font-size: 16px; 
+  }
+  .cards { 
+    gap: 12px; 
+  }
+  .card { 
+    border-radius: 14px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06); 
+  }
+  .card img { 
+    height: 140px; 
+  }
+  .tag { 
+    background: #eef2ff; 
+    color: #4f46e5; 
+    font-weight: 600; 
+  }
+
+  .extra-images,
+  #roly, #bu, #ni { 
+    display: none; 
   }
 }

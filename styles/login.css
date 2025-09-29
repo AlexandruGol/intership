@@ -70,6 +70,19 @@ input[type="password"] {
   font-size: 14px;
 }
 
+/* Better placeholders and focus states */
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #9aa0a6;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #3b56ff;
+  box-shadow: 0 0 0 3px rgba(59, 86, 255, 0.15);
+}
+
 .password-wrapper {
   position: relative;
 }
@@ -87,6 +100,11 @@ input[type="password"] {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
 }
 
 .checkbox-row label {
@@ -257,30 +275,81 @@ button:hover {
 }
 
 
+/* telefoane */
 @media (max-width: 600px) {
-  .logo-login {
-    flex-direction: column;
-    gap: 6px;
-    justify-content: center;
+  .right {
+    display: none;
+  }
+
+  .left {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 24px 20px 28px;
+    background: #fff;
+    min-height: 100vh;
+    max-width: 380px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .login-box {
+    margin: 16px auto 0;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    color: #6b7280;
+    font-size: 14px;
   }
 
   .logo {
-    width: 45px;
+    margin: 6px 0 0 0;
+    display: block;
+    width: 90px;
   }
 
-  .logo-login h1 {
-    font-size: 1.5rem;
+  button {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 10px 18px rgba(59, 86, 255, 0.3);
   }
 
-  .right h2 {
-    font-size: 1.1rem;
+  .signup {
+    margin-top: 24px;
+    text-align: center;
+    color: #6b7280;
   }
 
-  #Lorem {
-    font-size: 11px;
+  input[type="email"],
+  input[type="password"] {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: #e5e7eb;
   }
 
-  .dots {
+  .password-wrapper .toggle-password {
+    font-size: 18px;
+    color: #9aa0a6;
+  }
+
+  .forgot {
     margin-top: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
   }
 }
