@@ -60,27 +60,34 @@ label {
   color: #333;
 }
 
-input[type="email"],
-input[type="password"] {
+.input-field {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  font-size: 14px;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  background: #fafbfc;
+  transition: all 0.3s ease;
+  font-family: inherit;
 }
 
-/* Better placeholders and focus states */
-input[type="email"]::placeholder,
-input[type="password"]::placeholder {
-  color: #9aa0a6;
+.input-field::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
+.input-field:focus {
   outline: none;
   border-color: #3b56ff;
-  box-shadow: 0 0 0 3px rgba(59, 86, 255, 0.15);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 86, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.input-field:hover:not(:focus) {
+  border-color: #d1d5db;
+  background: #ffffff;
 }
 
 .password-wrapper {
@@ -283,11 +290,10 @@ button:hover {
 
   .left {
     flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 380px;
     padding: 24px 20px 28px;
     background: #fff;
     min-height: 100vh;
-    max-width: 380px;
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
@@ -334,8 +340,7 @@ button:hover {
     color: #6b7280;
   }
 
-  input[type="email"],
-  input[type="password"] {
+  .input-field {
     padding: 14px;
     font-size: 16px;
     border-radius: 12px;

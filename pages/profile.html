@@ -10,28 +10,39 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="left">
-      <div class="logo">
-        <img src="../assets/profile/Food del.png" alt="Logo">
+  <header>
+    <div class="navbar">
+      <!-- Left -->
+      <div class="left-side">
+        <div class="logo">
+          <img src="../assets/profile/Food del.png" alt="Logo">
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+          <i class="fa fa-search"></i>
+        </div>
       </div>
-      <div class="search">
-        <i class="fa fa-search"></i>
-        <input type="text" placeholder="Search">
+
+      <!-- Right -->
+      <div class="nav-links">
+        <a href="#">Restaurants</a>
+        <a href="#">Deals</a>
+        <a href="#">My orders</a>
+
+        <div class="notif">
+          <i class="fa fa-shopping-bag"></i>
+          <span>4</span>
+        </div>
+
+        <div class="profile">
+          <img src="../assets/profile/profile.png" alt="Profile">
+        </div>
+
+        <div class="meniuTel">
+          <i class="fa fa-bars"></i>
+        </div>
       </div>
     </div>
-    <nav class="menu">
-      <a href="#">Restaurants</a>
-      <a href="#">Deals</a>
-      <a href="#">My orders</a>
-      <div class="notifications">
-        <i class="fa fa-envelope"></i>
-        <span class="badge">4</span>
-      </div>
-      <div class="profile">
-        <img src="../assets/profile/profile.png" alt="Profile">
-      </div>
-    </nav>
   </header>
 
   <!-- MAIN -->
@@ -44,6 +55,7 @@
           <li class="active">
             <i class="fa fa-user"></i>
             <div>
+              <span class="title">Account</span><br>
               <span class="subtitle">Personal information</span>
             </div>
           </li>
